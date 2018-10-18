@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="form.css">
+    <?php include('invoer2.php'); ?>
     
 </head>
 <body>
-        <div class="h1"><h1>Invoer formulier voor nieuwe vakken</h1></div>
-        <form method="POST" id="form" action="invoer.php"> 
+        <div class="h1"><h1>Invoer formulier voor nieuwe vakken</h1></div><br>
+        <form method="POST" id="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" > 
                 <div>
                 <label for="Vak">Vak</label>
                 <input type="text" id="vak" name="vak" placeholder="Vak">
@@ -25,19 +26,22 @@
                 <input type="submit" name="submit" value="submit"></button>
             </div>
             </form>
-            <div class="h1"><h1>Invoer formulier voor behaalde cijfers</h1></div>
-            <form action="invoer2.php" method="POST" id="form">
+            <div class="h1"><h1>Invoer formulier voor behaalde cijfers</h1></div><br>
+            <form method="POST" id="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" >
                     <div>
-                    <label for="Student_ID">Student ID#</label>
-                    <input type="text" id="Student_ID" name="Student_ID" placeholder="Student_ID" required>
-                    </div>
+                    <label for="Student_id">Student ID#</label>
+                    <input type="text" id="Student_id" name="Student_id" placeholder="Student_id" required>
+                    <span class = "error">* <?php echo $student_idErr;?></span>    
+                </div>
                 <div>
-                    <label for="Les_ID">Les ID#</label>
-                    <input type="text" id="Les_ID" name="Les_ID" placeholder="Les_ID" required>
+                    <label for="Les_id">Les ID#</label>
+                    <input type="text" id="Les_id" name="Les_id" placeholder="Les_id" required>
+                    <span class = "error">* <?php echo $les_idErr;?></span>
                 </div>
                 <div>
                     <label for="cijfer">cijfer</label>
                     <input type = "text" id="cijfer" name="cijfer" placeholder="Behaald cijfer">
+                    <span class = "error">* <?php echo $cijferErr;?></span>
                 </div>
     
                 <!-- test id veld leeggelaten aangezien het, als het goed is, dmv auto increment automatisch met 1 ophoogt per record-->

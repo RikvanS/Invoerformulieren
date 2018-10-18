@@ -1,0 +1,47 @@
+#form {
+    margin: 0 auto;
+    width: 50%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color:rgb(216, 210, 210);
+}
+
+#form div+div {
+    margin-top:0.5em;
+}
+
+#form label {
+    display: inline-block;
+    width: 6em;
+    text-align: right;
+}
+
+#form input, textarea {
+    font: 1em sans-serif;
+    width:70%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;  
+}
+
+#form input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+
+#form textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* To give enough room to type some text */
+    height: 5em;
+
+    /* To allow users to resize any textarea vertically
+       It does not work on all browsers */
+    resize: vertical;
+}
+    
+.button {   
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 6em; /* same size as the label elements */

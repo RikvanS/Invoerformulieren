@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
+    
+</head>
+<body>
+        <div class="h1"><h1>Invoer formulier voor nieuwe vakken</h1></div>
+        <form method="POST" id="form" action="invoer.php"> 
+                <div>
+                <label for="Vak">Vak</label>
+                <input type="text" id="vak" name="vak" placeholder="Vak">
+                <span class = "error">* <?php echo $vakErr;?></span>
+                </div>
+            <div>
+                <label for="Les_ID">Les_ID</label>
+                <input type="text" id="Les_ID" name="Les_ID" placeholder="Les ID#">
+            </div>
+            <!-- Les_ID is auto increment, wellicht niet nodig om toe te voegen? Zou automatisch moeten gebeuren.-->
+            <div class="button">
+                <input type="submit" name="submit" value="submit"></button>
+            </div>
+            </form>
+            <div class="h1"><h1>Invoer formulier voor behaalde cijfers</h1></div>
+            <form action="invoer2.php" method="POST" id="form">
+                    <div>
+                    <label for="Student_ID">Student ID#</label>
+                    <input type="text" id="Student_ID" name="Student_ID" placeholder="Student_ID" required>
+                    </div>
+                <div>
+                    <label for="Les_ID">Les ID#</label>
+                    <input type="text" id="Les_ID" name="Les_ID" placeholder="Les_ID" required>
+                </div>
+                <div>
+                    <label for="cijfer">cijfer</label>
+                    <input type = "text" id="cijfer" name="cijfer" placeholder="Behaald cijfer">
+                </div>
+    
+                <!-- test id veld leeggelaten aangezien het, als het goed is, dmv auto increment automatisch met 1 ophoogt per record-->
+                <div class="button">
+                    <input type="submit" name="submit"></button>
+                </div>
+                </form>
+</body>
+</html>

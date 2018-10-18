@@ -1,10 +1,26 @@
+body {
+    background-color: rgb(211, 211, 211);
+}
+.error {
+    color: red;
+}
+
+.succes {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.mainheader {
+    text-align: center;
+}
+
 #form {
     margin: 0 auto;
     width: 50%;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
-    background-color:rgb(216, 210, 210);
+    background-color:rgb(169, 233, 181);
 }
 
 #form div+div {

@@ -10,7 +10,8 @@
     
 </head>
 <body>
-        <div class="h1"><h1>Invoer formulier voor nieuwe vakken</h1></div><br>
+    
+        <div class="mainheader"><h1>Invoer formulier voor nieuwe vakken</h1></div><br>
         <form method="POST" id="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" > 
                 <div>
                 <label for="Vak">Vak</label>
@@ -23,19 +24,19 @@
             </div>
             <!-- Les_ID is auto increment, wellicht niet nodig om toe te voegen? Zou automatisch moeten gebeuren.-->
             <div class="button">
-                <input type="submit" name="submit" value="submit"></button>
+                <input type="submit" name="submit" value="Submit"></button>
             </div>
             </form>
-            <div class="h1"><h1>Invoer formulier voor behaalde cijfers</h1></div><br>
+            <div class="mainheader"><h1>Invoer formulier voor behaalde cijfers</h1></div><br>
             <form method="POST" id="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" >
                     <div>
                     <label for="Student_id">Student ID#</label>
-                    <input type="text" id="Student_id" name="Student_id" placeholder="Student_id" required>
+                    <input type="text" id="Student_id" name="Student_id" placeholder="Student_id" >
                     <span class = "error">* <?php echo $student_idErr;?></span>    
                 </div>
                 <div>
                     <label for="Les_id">Les ID#</label>
-                    <input type="text" id="Les_id" name="Les_id" placeholder="Les_id" required>
+                    <input type="text" id="Les_id" name="Les_id" placeholder="Les_id" >
                     <span class = "error">* <?php echo $les_idErr;?></span>
                 </div>
                 <div>
@@ -47,7 +48,9 @@
                 <!-- test id veld leeggelaten aangezien het, als het goed is, dmv auto increment automatisch met 1 ophoogt per record-->
                 <div class="button">
                     <input type="submit" name="submit"></button>
+                    <div class="succes"> <? echo $succes; ?> </div>
                 </div>
                 </form>
+    
 </body>
 </html>

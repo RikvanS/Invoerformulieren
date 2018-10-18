@@ -1,7 +1,7 @@
 <?php 
 
 $vakErr = $student_idErr = $les_idErr = $cijferErr = "";
-$vak = $student_id = $les_id = $cijfer  = "";
+$vak = $student_id = $les_id = $cijfer = $succes = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["vak"])) {

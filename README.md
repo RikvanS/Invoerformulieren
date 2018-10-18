@@ -27,3 +27,9 @@ Cleanup sectie onderin toegevoegd
 Local host nog niet werkend gekregen dus nog niet in staat geweest om te testen, eerstvolgende stap is echter CSS van forms aangezien code in principe, op tikfouten na, correct zou moeten zijn. 
 In het ergste geval, als de code wel incorrect blijkt, is de structuur en opbouw + functionaliteit me nu dusdanig duidelijk dat herstel relatief makkelijk zou moeten blijken. Aangezien vereiste van opdracht óók de presentatie omvatte krijgt CSS nu prioriteit over werkend krijgen van localhost via apache, aangezien tijdsbestek hiervan geheel onbekend is en CSS relatief sneller klaar zou moeten zijn.
 -------
+
+21:50
+background-color van body formulier pagina naar zeer licht grijs gebracht: net, strak en zakelijk zonder dat de pagina wit blijft en lijkt op een goedkoop word document. Lichtgroene tint van formulier voor contrast zonder schreeuwerig te zijn, tevens (schijnt) de kleur te helpen bij het leesbaar maken van de tekst voor dyslecten. 
+
+22:13
+localhost test nog niet gelukt. Voor nu kom ik zelf niet verder ondanks google, morgen op locatie hulp vragen bij coaches danwel collega's. CSS is adequaat voor de setting, code zou in orde moeten zijn. Laatste push van de avond.
